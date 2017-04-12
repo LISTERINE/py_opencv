@@ -1,0 +1,10 @@
+flask:
+  image: py_opencv:latest
+  ports:
+    - "80:80"
+  volumes:
+    - ./app:/opt/py_opencv/app
+    - ./run.py:/opt/py_opencv/run.py
+    - ./config.py:/opt/py_opencv/config.py
+    - ./res:/opt/py_opencv/res
+  restart: always

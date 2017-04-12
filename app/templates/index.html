@@ -1,0 +1,22 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<p>py_opencv is online </p>
+<p>websocket status: <span><p id="socketStatus">connecting...</p></span></p>
+
+
+{% endblock %}
+
+
+
+
+{% block js %}
+
+{% assets "index_js" %}
+	<script type="text/javascript" src="{{ ASSET_URL }}"></script>
+{% endassets %}
+
+{% endblock %}
+
